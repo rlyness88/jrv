@@ -1,0 +1,2490 @@
+03-04 19:07| 
+03-04 19:07| spGetPassForUser | SELECT pass
+                    FROM user 
+                    WHERE id = ?
+03-04 19:07| bind: 1
+03-04 19:10| 
+03-04 19:10| spGetPassForUser | SELECT pass
+                    FROM user 
+                    WHERE id = ?
+03-04 19:10| bind: 1
+03-04 19:11| 
+03-04 19:11| spGetPassForUser | SELECT pass
+                    FROM user 
+                    WHERE id = ?
+03-04 19:11| bind: 1
+03-04 19:12| 
+03-04 19:12| spGetPassForUser | SELECT pass
+                    FROM user 
+                    WHERE id = ?
+03-04 19:12| bind: 1
+03-04 19:12| 
+03-04 19:12| spGetPassForUser | SELECT pass
+                    FROM user 
+                    WHERE id = ?
+03-04 19:12| bind: 1
+03-04 19:12| 
+03-04 19:12| spGetPassForUser | SELECT pass
+                    FROM user 
+                    WHERE id = ?
+03-04 19:12| bind: 1
+03-04 19:13| 
+03-04 19:13| spGetPassForUser | SELECT pass
+                    FROM user 
+                    WHERE id = ?
+03-04 19:13| bind: 1
+03-04 19:14| 
+03-04 19:14| spGetPassForUser | SELECT pass
+                    FROM user 
+                    WHERE id = ?
+03-04 19:14| bind: 1
+03-04 19:18| 
+03-04 19:18| spGetPassForUser | SELECT pass
+                    FROM user 
+                    WHERE id = ?
+03-04 19:18| bind: 1
+03-04 19:18| 
+03-04 19:18| spUpdateUserPassword | UPDATE user
+                    SET pass = ?
+                    WHERE id = ?
+03-04 19:18| bind: 29b0bf55fb66112f2e8f76a6e3b5ebcbeb45a446
+03-04 19:18| bind: 1
+03-04 19:27| 
+03-04 19:27| spGetAvailableShifts | SELECT id, shift
+                    FROM shifts
+                    WHERE isDeleted = 0
+                    ORDER BY shift ASC
+03-04 19:28| 
+03-04 19:28| spGetCalendarItems | SELECT id, title, start
+                    FROM availability
+                    WHERE isBooked = 0
+                    AND STR_TO_DATE(start,'%Y-%m-%d') >= timestamp(current_date)
+03-04 19:28| 
+03-04 19:28| spGetAllBookings | SELECT b.name, b.number, b.email, b.date, b.isConfirmed, b.isSentSMSReminder
+                    FROM booking b
+                    ORDER BY date DESC
+03-04 19:28| 
+03-04 19:28| spGetAllPortfolioItems | SELECT id, title, date, name, thumbnail, mainImage, isDeleted
+                    FROM portfolio
+                    ORDER BY isDeleted ASC, date DESC
+03-04 19:28| 
+03-04 19:28| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+03-04 19:28| bind: CEML
+03-04 19:28| 
+03-04 19:28| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+03-04 19:28| bind: ABT1
+03-04 19:28| 
+03-04 19:28| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+03-04 19:28| bind: ABT2
+03-04 19:28| 
+03-04 19:28| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+03-04 19:28| bind: SMIN
+03-04 19:28| 
+03-04 19:28| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+03-04 19:28| bind: SMTW
+03-04 19:28| 
+03-04 19:28| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+03-04 19:28| bind: SMLI
+03-04 19:28| 
+03-04 19:28| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+03-04 19:28| bind: SMFB
+03-04 19:28| 
+03-04 19:28| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+03-04 19:28| bind: SMOT
+03-04 19:28| 
+03-04 19:28| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+03-04 19:28| bind: SMOI
+03-04 20:47| 
+03-04 20:47| spGetAllBookings | SELECT b.name, b.number, b.email, b.date, b.isConfirmed, b.isSentSMSReminder
+                    FROM booking b
+                    ORDER BY date DESC
+03-04 20:48| 
+03-04 20:48| spGetAllPortfolioItems | SELECT id, title, date, name, thumbnail, mainImage, isDeleted
+                    FROM portfolio
+                    ORDER BY isDeleted ASC, date DESC
+04-04 07:22| 
+04-04 07:22| spGetAvailableShifts | SELECT id, shift
+                    FROM shifts
+                    WHERE isDeleted = 0
+                    ORDER BY shift ASC
+04-04 07:22| 
+04-04 07:22| spGetCalendarItems | SELECT id, title, start
+                    FROM availability
+                    WHERE isBooked = 0
+                    AND STR_TO_DATE(start,'%Y-%m-%d') >= timestamp(current_date)
+04-04 07:23| 
+04-04 07:23| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 07:23| bind: CEML
+04-04 07:23| 
+04-04 07:23| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 07:23| bind: ABT1
+04-04 07:23| 
+04-04 07:23| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 07:23| bind: ABT2
+04-04 07:23| 
+04-04 07:23| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 07:23| bind: SMIN
+04-04 07:23| 
+04-04 07:23| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 07:23| bind: SMTW
+04-04 07:23| 
+04-04 07:23| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 07:23| bind: SMLI
+04-04 07:23| 
+04-04 07:23| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 07:23| bind: SMFB
+04-04 07:23| 
+04-04 07:23| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 07:23| bind: SMOT
+04-04 07:23| 
+04-04 07:23| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 07:23| bind: SMOI
+04-04 07:23| 
+04-04 07:23| spGetAvailableShifts | SELECT id, shift
+                    FROM shifts
+                    WHERE isDeleted = 0
+                    ORDER BY shift ASC
+04-04 07:23| 
+04-04 07:23| spGetCalendarItems | SELECT id, title, start
+                    FROM availability
+                    WHERE isBooked = 0
+                    AND STR_TO_DATE(start,'%Y-%m-%d') >= timestamp(current_date)
+04-04 07:23| 
+04-04 07:23| spGetAllPortfolioItems | SELECT id, title, date, name, thumbnail, mainImage, isDeleted
+                    FROM portfolio
+                    ORDER BY isDeleted ASC, date DESC
+04-04 08:08| 
+04-04 08:08| spGetAvailableShifts | SELECT id, shift
+                    FROM shifts
+                    WHERE isDeleted = 0
+                    ORDER BY shift ASC
+04-04 08:08| 
+04-04 08:08| spGetCalendarItems | SELECT id, title, start
+                    FROM availability
+                    WHERE isBooked = 0
+                    AND STR_TO_DATE(start,'%Y-%m-%d') >= timestamp(current_date)
+04-04 08:08| 
+04-04 08:08| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:08| bind: CEML
+04-04 08:08| 
+04-04 08:08| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:08| bind: ABT1
+04-04 08:08| 
+04-04 08:08| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:08| bind: ABT2
+04-04 08:08| 
+04-04 08:08| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:08| bind: SMIN
+04-04 08:08| 
+04-04 08:08| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:08| bind: SMTW
+04-04 08:08| 
+04-04 08:08| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:08| bind: SMLI
+04-04 08:08| 
+04-04 08:08| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:08| bind: SMFB
+04-04 08:08| 
+04-04 08:08| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:08| bind: SMOT
+04-04 08:08| 
+04-04 08:08| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:08| bind: SMOI
+04-04 08:11| 
+04-04 08:11| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:11| bind: CEML
+04-04 08:11| 
+04-04 08:11| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:11| bind: ABT1
+04-04 08:11| 
+04-04 08:11| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:11| bind: ABT2
+04-04 08:11| 
+04-04 08:11| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:11| bind: SMIN
+04-04 08:11| 
+04-04 08:11| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:11| bind: SMTW
+04-04 08:11| 
+04-04 08:11| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:11| bind: SMLI
+04-04 08:11| 
+04-04 08:11| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:11| bind: SMFB
+04-04 08:11| 
+04-04 08:11| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:11| bind: SMOT
+04-04 08:11| 
+04-04 08:11| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:11| bind: SMOI
+04-04 08:11| 
+04-04 08:11| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:11| bind: CEML
+04-04 08:11| 
+04-04 08:11| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:11| bind: ABT1
+04-04 08:11| 
+04-04 08:11| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:11| bind: ABT2
+04-04 08:11| 
+04-04 08:11| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:11| bind: SMIN
+04-04 08:11| 
+04-04 08:11| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:11| bind: SMTW
+04-04 08:11| 
+04-04 08:11| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:11| bind: SMLI
+04-04 08:11| 
+04-04 08:11| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:11| bind: SMFB
+04-04 08:11| 
+04-04 08:11| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:11| bind: SMOT
+04-04 08:11| 
+04-04 08:11| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:11| bind: SMOI
+04-04 08:11| 
+04-04 08:11| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:11| bind: CEML
+04-04 08:11| 
+04-04 08:11| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:11| bind: ABT1
+04-04 08:11| 
+04-04 08:11| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:11| bind: ABT2
+04-04 08:11| 
+04-04 08:11| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:11| bind: SMIN
+04-04 08:11| 
+04-04 08:11| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:11| bind: SMTW
+04-04 08:11| 
+04-04 08:11| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:11| bind: SMLI
+04-04 08:11| 
+04-04 08:11| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:11| bind: SMFB
+04-04 08:11| 
+04-04 08:11| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:11| bind: SMOT
+04-04 08:11| 
+04-04 08:11| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:11| bind: SMOI
+04-04 08:17| 
+04-04 08:17| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:17| bind: CEML
+04-04 08:17| 
+04-04 08:17| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:17| bind: ABT1
+04-04 08:17| 
+04-04 08:17| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:17| bind: ABT2
+04-04 08:17| 
+04-04 08:17| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:17| bind: SMIN
+04-04 08:17| 
+04-04 08:17| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:17| bind: SMTW
+04-04 08:17| 
+04-04 08:17| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:17| bind: SMLI
+04-04 08:17| 
+04-04 08:17| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:17| bind: SMFB
+04-04 08:17| 
+04-04 08:17| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:17| bind: SMOT
+04-04 08:17| 
+04-04 08:17| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:17| bind: SMOI
+04-04 08:17| 
+04-04 08:17| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:17| bind: GAEM
+04-04 08:17| 
+04-04 08:17| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:17| bind: GAPA
+04-04 08:17| 
+04-04 08:17| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:17| bind: GAID
+04-04 08:21| 
+04-04 08:21| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:21| bind: CEML
+04-04 08:21| 
+04-04 08:21| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:21| bind: ABT1
+04-04 08:21| 
+04-04 08:21| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:21| bind: ABT2
+04-04 08:21| 
+04-04 08:21| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:21| bind: SMIN
+04-04 08:21| 
+04-04 08:21| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:21| bind: SMTW
+04-04 08:21| 
+04-04 08:21| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:21| bind: SMLI
+04-04 08:21| 
+04-04 08:21| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:21| bind: SMFB
+04-04 08:21| 
+04-04 08:21| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:21| bind: SMOT
+04-04 08:21| 
+04-04 08:21| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:21| bind: SMOI
+04-04 08:21| 
+04-04 08:21| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:21| bind: GAEM
+04-04 08:21| 
+04-04 08:21| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:21| bind: GAPA
+04-04 08:21| 
+04-04 08:21| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:21| bind: GAID
+04-04 08:21| 
+04-04 08:21| spUpdateSettingByCode | UPDATE settings
+                    SET settingValue = ?
+                    WHERE settingCode = ?
+                    LIMIT 1
+04-04 08:21| bind: #empty
+04-04 08:21| bind: GAEM
+04-04 08:21| 
+04-04 08:21| spUpdateSettingByCode | UPDATE settings
+                    SET settingValue = ?
+                    WHERE settingCode = ?
+                    LIMIT 1
+04-04 08:21| bind: 
+04-04 08:21| bind: GAEM
+04-04 08:21| 
+04-04 08:21| spUpdateSettingByCode | UPDATE settings
+                    SET settingValue = ?
+                    WHERE settingCode = ?
+                    LIMIT 1
+04-04 08:21| bind: #empty
+04-04 08:21| bind: GAPA
+04-04 08:21| 
+04-04 08:21| spUpdateSettingByCode | UPDATE settings
+                    SET settingValue = ?
+                    WHERE settingCode = ?
+                    LIMIT 1
+04-04 08:21| bind: 
+04-04 08:21| bind: GAPA
+04-04 08:21| 
+04-04 08:21| spUpdateSettingByCode | UPDATE settings
+                    SET settingValue = ?
+                    WHERE settingCode = ?
+                    LIMIT 1
+04-04 08:21| bind: #empty
+04-04 08:21| bind: GAID
+04-04 08:21| 
+04-04 08:21| spUpdateSettingByCode | UPDATE settings
+                    SET settingValue = ?
+                    WHERE settingCode = ?
+                    LIMIT 1
+04-04 08:21| bind: 
+04-04 08:21| bind: GAID
+04-04 08:21| 
+04-04 08:21| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:21| bind: CEML
+04-04 08:21| 
+04-04 08:21| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:21| bind: ABT1
+04-04 08:21| 
+04-04 08:21| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:21| bind: ABT2
+04-04 08:21| 
+04-04 08:21| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:21| bind: SMIN
+04-04 08:21| 
+04-04 08:21| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:21| bind: SMTW
+04-04 08:21| 
+04-04 08:21| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:21| bind: SMLI
+04-04 08:21| 
+04-04 08:21| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:21| bind: SMFB
+04-04 08:21| 
+04-04 08:21| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:21| bind: SMOT
+04-04 08:21| 
+04-04 08:21| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:21| bind: SMOI
+04-04 08:21| 
+04-04 08:21| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:21| bind: GAEM
+04-04 08:21| 
+04-04 08:21| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:21| bind: GAPA
+04-04 08:21| 
+04-04 08:21| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:21| bind: GAID
+04-04 08:22| 
+04-04 08:22| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:22| bind: CEML
+04-04 08:22| 
+04-04 08:22| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:22| bind: ABT1
+04-04 08:22| 
+04-04 08:22| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:22| bind: ABT2
+04-04 08:22| 
+04-04 08:22| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:22| bind: SMIN
+04-04 08:22| 
+04-04 08:22| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:22| bind: SMTW
+04-04 08:22| 
+04-04 08:22| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:22| bind: SMLI
+04-04 08:22| 
+04-04 08:22| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:22| bind: SMFB
+04-04 08:22| 
+04-04 08:22| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:22| bind: SMOT
+04-04 08:22| 
+04-04 08:22| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:22| bind: SMOI
+04-04 08:22| 
+04-04 08:22| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:22| bind: GAEM
+04-04 08:22| 
+04-04 08:22| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:22| bind: GAPA
+04-04 08:22| 
+04-04 08:22| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:22| bind: GAID
+04-04 08:23| 
+04-04 08:23| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:23| bind: CEML
+04-04 08:23| 
+04-04 08:23| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:23| bind: ABT1
+04-04 08:23| 
+04-04 08:23| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:23| bind: ABT2
+04-04 08:23| 
+04-04 08:23| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:23| bind: SMIN
+04-04 08:23| 
+04-04 08:23| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:23| bind: SMTW
+04-04 08:23| 
+04-04 08:23| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:23| bind: SMLI
+04-04 08:23| 
+04-04 08:23| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:23| bind: SMFB
+04-04 08:23| 
+04-04 08:23| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:23| bind: SMOT
+04-04 08:23| 
+04-04 08:23| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:23| bind: SMOI
+04-04 08:23| 
+04-04 08:23| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:23| bind: GAEM
+04-04 08:23| 
+04-04 08:23| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:23| bind: GAPA
+04-04 08:23| 
+04-04 08:23| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:23| bind: GAID
+04-04 08:23| 
+04-04 08:23| spUpdateSettingByCode | UPDATE settings
+                    SET settingValue = ?
+                    WHERE settingCode = ?
+                    LIMIT 1
+04-04 08:23| bind: #empty
+04-04 08:23| bind: GAEM
+04-04 08:23| 
+04-04 08:23| spUpdateSettingByCode | UPDATE settings
+                    SET settingValue = ?
+                    WHERE settingCode = ?
+                    LIMIT 1
+04-04 08:23| bind: rlyness88@gmail.com
+04-04 08:23| bind: GAEM
+04-04 08:23| 
+04-04 08:23| spUpdateSettingByCode | UPDATE settings
+                    SET settingValue = ?
+                    WHERE settingCode = ?
+                    LIMIT 1
+04-04 08:23| bind: #empty
+04-04 08:23| bind: GAPA
+04-04 08:23| 
+04-04 08:23| spUpdateSettingByCode | UPDATE settings
+                    SET settingValue = ?
+                    WHERE settingCode = ?
+                    LIMIT 1
+04-04 08:23| bind: test123
+04-04 08:23| bind: GAPA
+04-04 08:23| 
+04-04 08:23| spUpdateSettingByCode | UPDATE settings
+                    SET settingValue = ?
+                    WHERE settingCode = ?
+                    LIMIT 1
+04-04 08:23| bind: #empty
+04-04 08:23| bind: GAID
+04-04 08:23| 
+04-04 08:23| spUpdateSettingByCode | UPDATE settings
+                    SET settingValue = ?
+                    WHERE settingCode = ?
+                    LIMIT 1
+04-04 08:23| bind: id=2423437423492y3902724
+04-04 08:23| bind: GAID
+04-04 08:23| 
+04-04 08:23| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:23| bind: CEML
+04-04 08:23| 
+04-04 08:23| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:23| bind: ABT1
+04-04 08:23| 
+04-04 08:23| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:23| bind: ABT2
+04-04 08:23| 
+04-04 08:23| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:23| bind: SMIN
+04-04 08:23| 
+04-04 08:23| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:23| bind: SMTW
+04-04 08:23| 
+04-04 08:23| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:23| bind: SMLI
+04-04 08:23| 
+04-04 08:23| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:23| bind: SMFB
+04-04 08:23| 
+04-04 08:23| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:23| bind: SMOT
+04-04 08:23| 
+04-04 08:23| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:23| bind: SMOI
+04-04 08:23| 
+04-04 08:23| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:23| bind: GAEM
+04-04 08:23| 
+04-04 08:23| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:23| bind: GAPA
+04-04 08:23| 
+04-04 08:23| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:23| bind: GAID
+04-04 08:26| 
+04-04 08:26| spUpdateSettingByCode | UPDATE settings
+                    SET settingValue = ?
+                    WHERE settingCode = ?
+                    LIMIT 1
+04-04 08:26| bind: #empty
+04-04 08:26| bind: ABT1
+04-04 08:26| 
+04-04 08:26| spUpdateSettingByCode | UPDATE settings
+                    SET settingValue = ?
+                    WHERE settingCode = ?
+                    LIMIT 1
+04-04 08:26| bind: Hello, my name is Jake RussellLorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio dolore dolorum, exercitationem illum, maiores mollitia quam, quis quisquam ratione reprehenderit sit temporibus tenetur ut. Consequatur in laborum necessitatibus qui reprehenderit?
+04-04 08:26| bind: ABT1
+04-04 08:26| 
+04-04 08:26| spUpdateSettingByCode | UPDATE settings
+                    SET settingValue = ?
+                    WHERE settingCode = ?
+                    LIMIT 1
+04-04 08:26| bind: #empty
+04-04 08:26| bind: ABT2
+04-04 08:26| 
+04-04 08:26| spUpdateSettingByCode | UPDATE settings
+                    SET settingValue = ?
+                    WHERE settingCode = ?
+                    LIMIT 1
+04-04 08:26| bind: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio dolore dolorum, exercitationem illum, maiores mollitia quam, quis quisquam ratione reprehenderit sit temporibus tenetur ut. Consequatur in laborum necessitatibus qui reprehenderit?
+04-04 08:26| bind: ABT2
+04-04 08:26| 
+04-04 08:26| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:26| bind: CEML
+04-04 08:26| 
+04-04 08:26| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:26| bind: ABT1
+04-04 08:26| 
+04-04 08:26| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:26| bind: ABT2
+04-04 08:26| 
+04-04 08:26| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:26| bind: SMIN
+04-04 08:26| 
+04-04 08:26| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:26| bind: SMTW
+04-04 08:26| 
+04-04 08:26| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:26| bind: SMLI
+04-04 08:26| 
+04-04 08:26| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:26| bind: SMFB
+04-04 08:26| 
+04-04 08:26| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:26| bind: SMOT
+04-04 08:26| 
+04-04 08:26| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:26| bind: SMOI
+04-04 08:26| 
+04-04 08:26| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:26| bind: GAEM
+04-04 08:26| 
+04-04 08:26| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:26| bind: GAPA
+04-04 08:26| 
+04-04 08:26| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:26| bind: GAID
+04-04 08:38| 
+04-04 08:38| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:38| bind: CEML
+04-04 08:38| 
+04-04 08:38| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:38| bind: ABT1
+04-04 08:38| 
+04-04 08:38| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:38| bind: ABT2
+04-04 08:38| 
+04-04 08:38| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:38| bind: SMIN
+04-04 08:38| 
+04-04 08:38| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:38| bind: SMTW
+04-04 08:38| 
+04-04 08:38| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:38| bind: SMLI
+04-04 08:38| 
+04-04 08:38| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:38| bind: SMFB
+04-04 08:38| 
+04-04 08:38| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:38| bind: SMOT
+04-04 08:38| 
+04-04 08:38| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:38| bind: SMOI
+04-04 08:38| 
+04-04 08:38| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:38| bind: GAEM
+04-04 08:38| 
+04-04 08:38| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:38| bind: GAPA
+04-04 08:38| 
+04-04 08:38| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:38| bind: GAID
+04-04 08:38| 
+04-04 08:38| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:38| bind: OTHL
+04-04 08:38| 
+04-04 08:38| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:38| bind: OTHT
+04-04 08:39| 
+04-04 08:39| spUpdateSettingByCode | UPDATE settings
+                    SET settingValue = ?
+                    WHERE settingCode = ?
+                    LIMIT 1
+04-04 08:39| bind: #empty
+04-04 08:39| bind: OTHL
+04-04 08:39| 
+04-04 08:39| spUpdateSettingByCode | UPDATE settings
+                    SET settingValue = ?
+                    WHERE settingCode = ?
+                    LIMIT 1
+04-04 08:39| bind: TELL YOUR FRIENDS!
+04-04 08:39| bind: OTHL
+04-04 08:39| 
+04-04 08:39| spUpdateSettingByCode | UPDATE settings
+                    SET settingValue = ?
+                    WHERE settingCode = ?
+                    LIMIT 1
+04-04 08:39| bind: #empty
+04-04 08:39| bind: OTHT
+04-04 08:39| 
+04-04 08:39| spUpdateSettingByCode | UPDATE settings
+                    SET settingValue = ?
+                    WHERE settingCode = ?
+                    LIMIT 1
+04-04 08:39| bind: Tell your friends and colleagues about my site and get 10% off your next valet!!!
+04-04 08:39| bind: OTHT
+04-04 08:39| 
+04-04 08:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:39| bind: CEML
+04-04 08:39| 
+04-04 08:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:39| bind: ABT1
+04-04 08:39| 
+04-04 08:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:39| bind: ABT2
+04-04 08:39| 
+04-04 08:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:39| bind: SMIN
+04-04 08:39| 
+04-04 08:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:39| bind: SMTW
+04-04 08:39| 
+04-04 08:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:39| bind: SMLI
+04-04 08:39| 
+04-04 08:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:39| bind: SMFB
+04-04 08:39| 
+04-04 08:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:39| bind: SMOT
+04-04 08:39| 
+04-04 08:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:39| bind: SMOI
+04-04 08:39| 
+04-04 08:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:39| bind: GAEM
+04-04 08:39| 
+04-04 08:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:39| bind: GAPA
+04-04 08:39| 
+04-04 08:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:39| bind: GAID
+04-04 08:39| 
+04-04 08:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:39| bind: OTHL
+04-04 08:39| 
+04-04 08:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:39| bind: OTHT
+04-04 08:41| 
+04-04 08:41| spUpdateSettingByCode | UPDATE settings
+                    SET settingValue = ?
+                    WHERE settingCode = ?
+                    LIMIT 1
+04-04 08:41| bind: #empty
+04-04 08:41| bind: OTHL
+04-04 08:41| 
+04-04 08:41| spUpdateSettingByCode | UPDATE settings
+                    SET settingValue = ?
+                    WHERE settingCode = ?
+                    LIMIT 1
+04-04 08:41| bind: TELL YOUR FRIENDS
+04-04 08:41| bind: OTHL
+04-04 08:41| 
+04-04 08:41| spUpdateSettingByCode | UPDATE settings
+                    SET settingValue = ?
+                    WHERE settingCode = ?
+                    LIMIT 1
+04-04 08:41| bind: #empty
+04-04 08:41| bind: OTHT
+04-04 08:41| 
+04-04 08:41| spUpdateSettingByCode | UPDATE settings
+                    SET settingValue = ?
+                    WHERE settingCode = ?
+                    LIMIT 1
+04-04 08:41| bind: Tell your friends and colleagues about my site and get 10% off your next valet
+04-04 08:41| bind: OTHT
+04-04 08:41| 
+04-04 08:41| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:41| bind: CEML
+04-04 08:41| 
+04-04 08:41| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:41| bind: ABT1
+04-04 08:41| 
+04-04 08:41| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:41| bind: ABT2
+04-04 08:41| 
+04-04 08:41| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:41| bind: SMIN
+04-04 08:41| 
+04-04 08:41| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:41| bind: SMTW
+04-04 08:41| 
+04-04 08:41| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:41| bind: SMLI
+04-04 08:41| 
+04-04 08:41| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:41| bind: SMFB
+04-04 08:41| 
+04-04 08:41| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:41| bind: SMOT
+04-04 08:41| 
+04-04 08:41| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:41| bind: SMOI
+04-04 08:41| 
+04-04 08:41| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:41| bind: GAEM
+04-04 08:41| 
+04-04 08:41| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:41| bind: GAPA
+04-04 08:41| 
+04-04 08:41| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:41| bind: GAID
+04-04 08:41| 
+04-04 08:41| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:41| bind: OTHL
+04-04 08:41| 
+04-04 08:41| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:41| bind: OTHT
+04-04 08:42| 
+04-04 08:42| spUpdateSettingByCode | UPDATE settings
+                    SET settingValue = ?
+                    WHERE settingCode = ?
+                    LIMIT 1
+04-04 08:42| bind: #empty
+04-04 08:42| bind: ABT1
+04-04 08:42| 
+04-04 08:42| spUpdateSettingByCode | UPDATE settings
+                    SET settingValue = ?
+                    WHERE settingCode = ?
+                    LIMIT 1
+04-04 08:42| bind: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio dolore dolorum, exercitationem illum, maiores mollitia quam, quis quisquam ratione reprehenderit sit temporibus tenetur ut. Consequatur in laborum necessitatibus qui reprehenderit?
+04-04 08:42| bind: ABT1
+04-04 08:42| 
+04-04 08:42| spUpdateSettingByCode | UPDATE settings
+                    SET settingValue = ?
+                    WHERE settingCode = ?
+                    LIMIT 1
+04-04 08:42| bind: #empty
+04-04 08:42| bind: ABT2
+04-04 08:42| 
+04-04 08:42| spUpdateSettingByCode | UPDATE settings
+                    SET settingValue = ?
+                    WHERE settingCode = ?
+                    LIMIT 1
+04-04 08:42| bind: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio dolore dolorum, exercitationem illum, maiores mollitia quam, quis quisquam ratione reprehenderit sit temporibus tenetur ut. Consequatur in laborum necessitatibus qui reprehenderit?
+04-04 08:42| bind: ABT2
+04-04 08:42| 
+04-04 08:42| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:42| bind: CEML
+04-04 08:42| 
+04-04 08:42| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:42| bind: ABT1
+04-04 08:42| 
+04-04 08:42| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:42| bind: ABT2
+04-04 08:42| 
+04-04 08:42| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:42| bind: SMIN
+04-04 08:42| 
+04-04 08:42| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:42| bind: SMTW
+04-04 08:42| 
+04-04 08:42| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:42| bind: SMLI
+04-04 08:42| 
+04-04 08:42| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:42| bind: SMFB
+04-04 08:42| 
+04-04 08:42| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:42| bind: SMOT
+04-04 08:42| 
+04-04 08:42| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:42| bind: SMOI
+04-04 08:42| 
+04-04 08:42| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:42| bind: GAEM
+04-04 08:42| 
+04-04 08:42| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:42| bind: GAPA
+04-04 08:42| 
+04-04 08:42| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:42| bind: GAID
+04-04 08:42| 
+04-04 08:42| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:42| bind: OTHL
+04-04 08:42| 
+04-04 08:42| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 08:42| bind: OTHT
+04-04 08:59| 
+04-04 08:59| spGetAllBookings | SELECT b.name, b.number, b.email, b.date, b.isConfirmed, b.isSentSMSReminder
+                    FROM booking b
+                    ORDER BY date DESC
+04-04 08:59| 
+04-04 08:59| spGetAllBookings | SELECT b.name, b.number, b.email, b.date, b.isConfirmed, b.isSentSMSReminder
+                    FROM booking b
+                    ORDER BY date DESC
+04-04 09:25| 
+04-04 09:25| spGetAvailableShifts | SELECT id, shift
+                    FROM shifts
+                    WHERE isDeleted = 0
+                    ORDER BY shift ASC
+04-04 09:25| 
+04-04 09:25| spGetCalendarItems | SELECT id, title, start
+                    FROM availability
+                    WHERE isBooked = 0
+                    AND STR_TO_DATE(start,'%Y-%m-%d') >= timestamp(current_date)
+04-04 09:25| 
+04-04 09:25| spInsertNewCalendarItem | INSERT INTO availability (title, start) VALUES (?, ?)
+04-04 09:25| bind: 16:00 - 18:00
+04-04 09:25| bind: 2019-04-13
+04-04 09:25| 
+04-04 09:25| spInsertNewCalendarItem | INSERT INTO availability (title, start) VALUES (?, ?)
+04-04 09:25| bind: 13:00 - 15:00
+04-04 09:25| bind: 2019-04-13
+04-04 09:26| 
+04-04 09:26| spGetAllBookings | SELECT b.name, b.number, b.email, b.date, b.isConfirmed, b.isSentSMSReminder
+                    FROM booking b
+                    ORDER BY date DESC
+04-04 09:27| 
+04-04 09:27| spGetAllBookings | SELECT b.name, b.number, b.email, b.date, b.isConfirmed, b.isSentSMSReminder
+                    FROM booking b
+                    ORDER BY date DESC
+04-04 09:27| 
+04-04 09:27| spGetAllBookings | SELECT b.name, b.number, b.email, b.date, b.isConfirmed, b.isSentSMSReminder
+                    FROM booking b
+                    ORDER BY date DESC
+04-04 09:27| 
+04-04 09:27| spGetAllBookings | SELECT b.name, b.number, b.email, b.date, b.isConfirmed, b.isSentSMSReminder
+                    FROM booking b
+                    ORDER BY date DESC
+04-04 09:27| 
+04-04 09:27| spGetAllBookings | SELECT b.name, b.number, b.email, b.date, b.isConfirmed, b.isSentSMSReminder
+                    FROM booking b
+                    ORDER BY date DESC
+04-04 09:27| 
+04-04 09:27| spGetAllBookings | SELECT b.name, b.number, b.email, b.date, b.isConfirmed, b.isSentSMSReminder
+                    FROM booking b
+                    ORDER BY date DESC
+04-04 09:28| 
+04-04 09:28| spGetAllPortfolioItems | SELECT id, title, date, name, thumbnail, mainImage, isDeleted
+                    FROM portfolio
+                    ORDER BY isDeleted ASC, date DESC
+04-04 09:28| 
+04-04 09:28| spGetPortfolioItemById | SELECT id, title, body, name
+                    FROM portfolio
+                    WHERE id = ?
+                    LIMIT 0,1
+04-04 09:28| bind: 1
+04-04 09:28| 
+04-04 09:28| spTogglePortfolioItem | UPDATE portfolio SET isDeleted = 1 - isDeleted
+                    WHERE id = ?
+04-04 09:28| bind: 2
+04-04 09:28| 
+04-04 09:28| spCheckPortfolioIsDeleted | SELECT isDeleted
+                    FROM portfolio
+                    WHERE id = ?
+04-04 09:28| bind: 2
+04-04 09:28| 
+04-04 09:28| spTogglePortfolioItem | UPDATE portfolio SET isDeleted = 1 - isDeleted
+                    WHERE id = ?
+04-04 09:28| bind: 3
+04-04 09:28| 
+04-04 09:28| spCheckPortfolioIsDeleted | SELECT isDeleted
+                    FROM portfolio
+                    WHERE id = ?
+04-04 09:28| bind: 3
+04-04 09:28| 
+04-04 09:28| spTogglePortfolioItem | UPDATE portfolio SET isDeleted = 1 - isDeleted
+                    WHERE id = ?
+04-04 09:28| bind: 5
+04-04 09:28| 
+04-04 09:28| spCheckPortfolioIsDeleted | SELECT isDeleted
+                    FROM portfolio
+                    WHERE id = ?
+04-04 09:28| bind: 5
+04-04 09:28| 
+04-04 09:28| spTogglePortfolioItem | UPDATE portfolio SET isDeleted = 1 - isDeleted
+                    WHERE id = ?
+04-04 09:28| bind: 3
+04-04 09:28| 
+04-04 09:28| spCheckPortfolioIsDeleted | SELECT isDeleted
+                    FROM portfolio
+                    WHERE id = ?
+04-04 09:28| bind: 3
+04-04 09:28| 
+04-04 09:28| spTogglePortfolioItem | UPDATE portfolio SET isDeleted = 1 - isDeleted
+                    WHERE id = ?
+04-04 09:28| bind: 5
+04-04 09:28| 
+04-04 09:28| spCheckPortfolioIsDeleted | SELECT isDeleted
+                    FROM portfolio
+                    WHERE id = ?
+04-04 09:28| bind: 5
+04-04 09:28| 
+04-04 09:28| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 09:28| bind: CEML
+04-04 09:28| 
+04-04 09:28| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 09:28| bind: ABT1
+04-04 09:28| 
+04-04 09:28| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 09:28| bind: ABT2
+04-04 09:28| 
+04-04 09:28| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 09:28| bind: SMIN
+04-04 09:28| 
+04-04 09:28| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 09:28| bind: SMTW
+04-04 09:28| 
+04-04 09:28| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 09:28| bind: SMLI
+04-04 09:28| 
+04-04 09:28| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 09:28| bind: SMFB
+04-04 09:28| 
+04-04 09:28| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 09:28| bind: SMOT
+04-04 09:28| 
+04-04 09:28| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 09:28| bind: SMOI
+04-04 09:28| 
+04-04 09:28| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 09:28| bind: GAEM
+04-04 09:28| 
+04-04 09:28| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 09:28| bind: GAPA
+04-04 09:28| 
+04-04 09:28| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 09:28| bind: GAID
+04-04 09:28| 
+04-04 09:28| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 09:28| bind: OTHL
+04-04 09:28| 
+04-04 09:28| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 09:28| bind: OTHT
+04-04 09:34| 
+04-04 09:34| spGetAvailableShifts | SELECT id, shift
+                    FROM shifts
+                    WHERE isDeleted = 0
+                    ORDER BY shift ASC
+04-04 09:34| 
+04-04 09:34| spGetCalendarItems | SELECT id, title, start
+                    FROM availability
+                    WHERE isBooked = 0
+                    AND STR_TO_DATE(start,'%Y-%m-%d') >= timestamp(current_date)
+04-04 09:40| 
+04-04 09:40| spGetAvailableShifts | SELECT id, shift
+                    FROM shifts
+                    WHERE isDeleted = 0
+                    ORDER BY shift ASC
+04-04 09:40| 
+04-04 09:40| spGetCalendarItems | SELECT id, title, start
+                    FROM availability
+                    WHERE isBooked = 0
+                    AND STR_TO_DATE(start,'%Y-%m-%d') >= timestamp(current_date)
+04-04 10:36| 
+04-04 10:36| spInsertNewCalendarItem | INSERT INTO availability (title, start) VALUES (?, ?)
+04-04 10:36| bind: 12:00 - 17:00
+04-04 10:36| bind: 2019-04-12
+04-04 10:37| 
+04-04 10:37| spGetAllBookings | SELECT b.name, b.number, b.email, b.date, b.isConfirmed, b.isSentSMSReminder
+                    FROM booking b
+                    ORDER BY date DESC
+04-04 10:38| 
+04-04 10:38| spGetAllBookings | SELECT b.name, b.number, b.email, b.date, b.isConfirmed, b.isSentSMSReminder
+                    FROM booking b
+                    ORDER BY date DESC
+04-04 10:38| 
+04-04 10:38| spGetAllBookings | SELECT b.name, b.number, b.email, b.date, b.isConfirmed, b.isSentSMSReminder
+                    FROM booking b
+                    ORDER BY date DESC
+04-04 10:38| 
+04-04 10:38| spGetAllPortfolioItems | SELECT id, title, date, name, thumbnail, mainImage, isDeleted
+                    FROM portfolio
+                    ORDER BY isDeleted ASC, date DESC
+04-04 10:38| 
+04-04 10:38| spTogglePortfolioItem | UPDATE portfolio SET isDeleted = 1 - isDeleted
+                    WHERE id = ?
+04-04 10:38| bind: 4
+04-04 10:38| 
+04-04 10:38| spCheckPortfolioIsDeleted | SELECT isDeleted
+                    FROM portfolio
+                    WHERE id = ?
+04-04 10:38| bind: 4
+04-04 10:38| 
+04-04 10:38| spTogglePortfolioItem | UPDATE portfolio SET isDeleted = 1 - isDeleted
+                    WHERE id = ?
+04-04 10:38| bind: 2
+04-04 10:38| 
+04-04 10:38| spCheckPortfolioIsDeleted | SELECT isDeleted
+                    FROM portfolio
+                    WHERE id = ?
+04-04 10:38| bind: 2
+04-04 10:38| 
+04-04 10:38| spGetPortfolioItemById | SELECT id, title, body, name
+                    FROM portfolio
+                    WHERE id = ?
+                    LIMIT 0,1
+04-04 10:38| bind: 3
+04-04 10:39| 
+04-04 10:39| spUpdatePortfolioItemById | UPDATE portfolio
+                    SET name = ?, title = ?, body = ?
+                    WHERE id = ?
+04-04 10:39| bind: Fred Funk111
+04-04 10:39| bind: Awesome Job!!
+04-04 10:39| bind: DId a great job!!
+04-04 10:39| bind: 3
+04-04 10:39| 
+04-04 10:39| spGetAllPortfolioItems | SELECT id, title, date, name, thumbnail, mainImage, isDeleted
+                    FROM portfolio
+                    ORDER BY isDeleted ASC, date DESC
+04-04 10:39| 
+04-04 10:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 10:39| bind: CEML
+04-04 10:39| 
+04-04 10:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 10:39| bind: ABT1
+04-04 10:39| 
+04-04 10:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 10:39| bind: ABT2
+04-04 10:39| 
+04-04 10:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 10:39| bind: SMIN
+04-04 10:39| 
+04-04 10:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 10:39| bind: SMTW
+04-04 10:39| 
+04-04 10:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 10:39| bind: SMLI
+04-04 10:39| 
+04-04 10:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 10:39| bind: SMFB
+04-04 10:39| 
+04-04 10:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 10:39| bind: SMOT
+04-04 10:39| 
+04-04 10:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 10:39| bind: SMOI
+04-04 10:39| 
+04-04 10:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 10:39| bind: GAEM
+04-04 10:39| 
+04-04 10:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 10:39| bind: GAPA
+04-04 10:39| 
+04-04 10:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 10:39| bind: GAID
+04-04 10:39| 
+04-04 10:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 10:39| bind: OTHL
+04-04 10:39| 
+04-04 10:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 10:39| bind: OTHT
+04-04 10:39| 
+04-04 10:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 10:39| bind: CEML
+04-04 10:39| 
+04-04 10:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 10:39| bind: ABT1
+04-04 10:39| 
+04-04 10:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 10:39| bind: ABT2
+04-04 10:39| 
+04-04 10:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 10:39| bind: SMIN
+04-04 10:39| 
+04-04 10:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 10:39| bind: SMTW
+04-04 10:39| 
+04-04 10:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 10:39| bind: SMLI
+04-04 10:39| 
+04-04 10:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 10:39| bind: SMFB
+04-04 10:39| 
+04-04 10:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 10:39| bind: SMOT
+04-04 10:39| 
+04-04 10:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 10:39| bind: SMOI
+04-04 10:39| 
+04-04 10:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 10:39| bind: GAEM
+04-04 10:39| 
+04-04 10:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 10:39| bind: GAPA
+04-04 10:39| 
+04-04 10:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 10:39| bind: GAID
+04-04 10:39| 
+04-04 10:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 10:39| bind: OTHL
+04-04 10:39| 
+04-04 10:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 10:39| bind: OTHT
+04-04 10:39| 
+04-04 10:39| spUpdateSettingByCode | UPDATE settings
+                    SET settingValue = ?
+                    WHERE settingCode = ?
+                    LIMIT 1
+04-04 10:39| bind: #empty
+04-04 10:39| bind: OTHL
+04-04 10:39| 
+04-04 10:39| spUpdateSettingByCode | UPDATE settings
+                    SET settingValue = ?
+                    WHERE settingCode = ?
+                    LIMIT 1
+04-04 10:39| bind: TELL YOUR FRIENDS!!
+04-04 10:39| bind: OTHL
+04-04 10:39| 
+04-04 10:39| spUpdateSettingByCode | UPDATE settings
+                    SET settingValue = ?
+                    WHERE settingCode = ?
+                    LIMIT 1
+04-04 10:39| bind: #empty
+04-04 10:39| bind: OTHT
+04-04 10:39| 
+04-04 10:39| spUpdateSettingByCode | UPDATE settings
+                    SET settingValue = ?
+                    WHERE settingCode = ?
+                    LIMIT 1
+04-04 10:39| bind: Tell your friends and colleagues about my site and get 10% off your next valet
+04-04 10:39| bind: OTHT
+04-04 10:39| 
+04-04 10:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 10:39| bind: CEML
+04-04 10:39| 
+04-04 10:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 10:39| bind: ABT1
+04-04 10:39| 
+04-04 10:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 10:39| bind: ABT2
+04-04 10:39| 
+04-04 10:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 10:39| bind: SMIN
+04-04 10:39| 
+04-04 10:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 10:39| bind: SMTW
+04-04 10:39| 
+04-04 10:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 10:39| bind: SMLI
+04-04 10:39| 
+04-04 10:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 10:39| bind: SMFB
+04-04 10:39| 
+04-04 10:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 10:39| bind: SMOT
+04-04 10:39| 
+04-04 10:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 10:39| bind: SMOI
+04-04 10:39| 
+04-04 10:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 10:39| bind: GAEM
+04-04 10:39| 
+04-04 10:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 10:39| bind: GAPA
+04-04 10:39| 
+04-04 10:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 10:39| bind: GAID
+04-04 10:39| 
+04-04 10:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 10:39| bind: OTHL
+04-04 10:39| 
+04-04 10:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 10:39| bind: OTHT
+04-04 10:47| 
+04-04 10:47| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 10:47| bind: CEML
+04-04 10:47| 
+04-04 10:47| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 10:47| bind: ABT1
+04-04 10:47| 
+04-04 10:47| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 10:47| bind: ABT2
+04-04 10:47| 
+04-04 10:47| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 10:47| bind: SMIN
+04-04 10:47| 
+04-04 10:47| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 10:47| bind: SMTW
+04-04 10:47| 
+04-04 10:47| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 10:47| bind: SMLI
+04-04 10:47| 
+04-04 10:47| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 10:47| bind: SMFB
+04-04 10:47| 
+04-04 10:47| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 10:47| bind: SMOT
+04-04 10:47| 
+04-04 10:47| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 10:47| bind: SMOI
+04-04 10:47| 
+04-04 10:47| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 10:47| bind: GAEM
+04-04 10:47| 
+04-04 10:47| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 10:47| bind: GAPA
+04-04 10:47| 
+04-04 10:47| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 10:47| bind: GAID
+04-04 10:47| 
+04-04 10:47| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 10:47| bind: OTHL
+04-04 10:47| 
+04-04 10:47| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+04-04 10:47| bind: OTHT
+04-04 13:22| 
+04-04 13:22| spGetAllBookings | SELECT b.name, b.number, b.email, b.date, b.isConfirmed, b.isSentSMSReminder
+                    FROM booking b
+                    ORDER BY date DESC
+04-04 13:23| 
+04-04 13:23| spGetAllPortfolioItems | SELECT id, title, date, name, thumbnail, mainImage, isDeleted
+                    FROM portfolio
+                    ORDER BY isDeleted ASC, date DESC
+05-04 08:22| 
+05-04 08:22| spGetAvailableShifts | SELECT id, shift
+                    FROM shifts
+                    WHERE isDeleted = 0
+                    ORDER BY shift ASC
+05-04 08:22| 
+05-04 08:22| spGetCalendarItems | SELECT id, title, start
+                    FROM availability
+                    WHERE isBooked = 0
+                    AND STR_TO_DATE(start,'%Y-%m-%d') >= timestamp(current_date)
+05-04 08:22| 
+05-04 08:22| spInsertNewCalendarItem | INSERT INTO availability (title, start) VALUES (?, ?)
+05-04 08:22| bind: 13:00 - 15:00
+05-04 08:22| bind: 2019-04-05
+05-04 08:22| 
+05-04 08:22| spInsertNewCalendarItem | INSERT INTO availability (title, start) VALUES (?, ?)
+05-04 08:22| bind: 16:00 - 18:00
+05-04 08:22| bind: 2019-04-05
+05-04 08:22| 
+05-04 08:22| spInsertNewCalendarItem | INSERT INTO availability (title, start) VALUES (?, ?)
+05-04 08:22| bind: 12:00 - 17:00
+05-04 08:22| bind: 2019-04-12
+05-04 08:23| 
+05-04 08:23| spGetAllBookings | SELECT b.name, b.number, b.email, b.date, b.isConfirmed, b.isSentSMSReminder
+                    FROM booking b
+                    ORDER BY date DESC
+05-04 11:20| 
+05-04 11:20| spGetAllBookings | SELECT b.name, b.number, b.email, b.date, b.isConfirmed, b.isSentSMSReminder
+                    FROM booking b
+                    ORDER BY date DESC
+05-04 11:21| 
+05-04 11:21| spGetAllBookings | SELECT b.name, b.number, b.email, b.date, b.isConfirmed, b.isSentSMSReminder
+                    FROM booking b
+                    ORDER BY date DESC
+05-04 11:22| 
+05-04 11:22| spGetAllBookings | SELECT b.name, b.number, b.email, b.date, b.isConfirmed, b.isSentSMSReminder
+                    FROM booking b
+                    ORDER BY date DESC
+05-04 11:22| 
+05-04 11:22| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+05-04 11:22| bind: CEML
+05-04 11:22| 
+05-04 11:22| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+05-04 11:22| bind: ABT1
+05-04 11:22| 
+05-04 11:22| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+05-04 11:22| bind: ABT2
+05-04 11:22| 
+05-04 11:22| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+05-04 11:22| bind: SMIN
+05-04 11:22| 
+05-04 11:22| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+05-04 11:22| bind: SMTW
+05-04 11:22| 
+05-04 11:22| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+05-04 11:22| bind: SMLI
+05-04 11:22| 
+05-04 11:22| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+05-04 11:22| bind: SMFB
+05-04 11:22| 
+05-04 11:22| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+05-04 11:22| bind: SMOT
+05-04 11:22| 
+05-04 11:22| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+05-04 11:22| bind: SMOI
+05-04 11:22| 
+05-04 11:22| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+05-04 11:22| bind: GAEM
+05-04 11:22| 
+05-04 11:22| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+05-04 11:22| bind: GAPA
+05-04 11:22| 
+05-04 11:22| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+05-04 11:22| bind: GAID
+05-04 11:22| 
+05-04 11:22| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+05-04 11:22| bind: OTHL
+05-04 11:22| 
+05-04 11:22| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+05-04 11:22| bind: OTHT
+05-04 11:22| 
+05-04 11:22| spGetAllPortfolioItems | SELECT id, title, date, name, thumbnail, mainImage, isDeleted
+                    FROM portfolio
+                    ORDER BY isDeleted ASC, date DESC
+05-04 11:22| 
+05-04 11:22| spTogglePortfolioItem | UPDATE portfolio SET isDeleted = 1 - isDeleted
+                    WHERE id = ?
+05-04 11:22| bind: 4
+05-04 11:22| 
+05-04 11:22| spCheckPortfolioIsDeleted | SELECT isDeleted
+                    FROM portfolio
+                    WHERE id = ?
+05-04 11:22| bind: 4
+05-04 11:22| 
+05-04 11:22| spTogglePortfolioItem | UPDATE portfolio SET isDeleted = 1 - isDeleted
+                    WHERE id = ?
+05-04 11:22| bind: 5
+05-04 11:22| 
+05-04 11:22| spCheckPortfolioIsDeleted | SELECT isDeleted
+                    FROM portfolio
+                    WHERE id = ?
+05-04 11:22| bind: 5
+05-04 11:22| 
+05-04 11:22| spTogglePortfolioItem | UPDATE portfolio SET isDeleted = 1 - isDeleted
+                    WHERE id = ?
+05-04 11:22| bind: 6
+05-04 11:22| 
+05-04 11:22| spCheckPortfolioIsDeleted | SELECT isDeleted
+                    FROM portfolio
+                    WHERE id = ?
+05-04 11:22| bind: 6
+05-04 11:22| 
+05-04 11:22| spTogglePortfolioItem | UPDATE portfolio SET isDeleted = 1 - isDeleted
+                    WHERE id = ?
+05-04 11:22| bind: 6
+05-04 11:22| 
+05-04 11:22| spCheckPortfolioIsDeleted | SELECT isDeleted
+                    FROM portfolio
+                    WHERE id = ?
+05-04 11:22| bind: 6
+05-04 11:22| 
+05-04 11:22| spTogglePortfolioItem | UPDATE portfolio SET isDeleted = 1 - isDeleted
+                    WHERE id = ?
+05-04 11:22| bind: 5
+05-04 11:22| 
+05-04 11:22| spCheckPortfolioIsDeleted | SELECT isDeleted
+                    FROM portfolio
+                    WHERE id = ?
+05-04 11:22| bind: 5
+05-04 11:22| 
+05-04 11:22| spGetPortfolioItemById | SELECT id, title, body, name
+                    FROM portfolio
+                    WHERE id = ?
+                    LIMIT 0,1
+05-04 11:22| bind: 6
+05-04 11:22| 
+05-04 11:22| spUpdatePortfolioItemById | UPDATE portfolio
+                    SET name = ?, title = ?, body = ?
+                    WHERE id = ?
+05-04 11:22| bind: Russ
+05-04 11:22| bind: caption
+05-04 11:22| bind: body body body besdsdfody body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body body
+05-04 11:22| bind: 6
+05-04 11:22| 
+05-04 11:22| spGetAllPortfolioItems | SELECT id, title, date, name, thumbnail, mainImage, isDeleted
+                    FROM portfolio
+                    ORDER BY isDeleted ASC, date DESC
+05-04 11:35| 
+05-04 11:35| spGetAvailableShifts | SELECT id, shift
+                    FROM shifts
+                    WHERE isDeleted = 0
+                    ORDER BY shift ASC
+05-04 11:35| 
+05-04 11:35| spGetCalendarItems | SELECT id, title, start
+                    FROM availability
+                    WHERE isBooked = 0
+                    AND STR_TO_DATE(start,'%Y-%m-%d') >= timestamp(current_date)
+05-04 11:35| 
+05-04 11:35| spInsertNewCalendarItem | INSERT INTO availability (title, start) VALUES (?, ?)
+05-04 11:35| bind: 16:00 - 18:00
+05-04 11:35| bind: 2019-04-03
+05-04 11:35| 
+05-04 11:35| spInsertNewCalendarItem | INSERT INTO availability (title, start) VALUES (?, ?)
+05-04 11:35| bind: 12:00 - 17:00
+05-04 11:35| bind: 2019-04-02
+05-04 11:35| 
+05-04 11:35| spInsertNewCalendarItem | INSERT INTO availability (title, start) VALUES (?, ?)
+05-04 11:35| bind: 09:00 - 15:00
+05-04 11:35| bind: 2019-04-01
+05-04 11:35| 
+05-04 11:35| spInsertNewCalendarItem | INSERT INTO availability (title, start) VALUES (?, ?)
+05-04 11:35| bind: 12:00 - 17:00
+05-04 11:35| bind: 2019-04-02
+05-04 11:35| 
+05-04 11:35| spInsertNewCalendarItem | INSERT INTO availability (title, start) VALUES (?, ?)
+05-04 11:35| bind: 13:00 - 15:00
+05-04 11:35| bind: 2019-04-02
+05-04 11:36| 
+05-04 11:36| spInsertNewCalendarItem | INSERT INTO availability (title, start) VALUES (?, ?)
+05-04 11:36| bind: 16:00 - 18:00
+05-04 11:36| bind: 2019-04-06
+05-04 11:36| 
+05-04 11:36| spInsertNewCalendarItem | INSERT INTO availability (title, start) VALUES (?, ?)
+05-04 11:36| bind: 13:00 - 15:00
+05-04 11:36| bind: 2019-04-06
+05-04 11:36| 
+05-04 11:36| spInsertNewCalendarItem | INSERT INTO availability (title, start) VALUES (?, ?)
+05-04 11:36| bind: 13:00 - 15:00
+05-04 11:36| bind: 2019-04-06
+05-04 11:36| 
+05-04 11:36| spInsertNewCalendarItem | INSERT INTO availability (title, start) VALUES (?, ?)
+05-04 11:36| bind: 16:00 - 18:00
+05-04 11:36| bind: 2019-04-06
+05-04 11:36| 
+05-04 11:36| spInsertNewCalendarItem | INSERT INTO availability (title, start) VALUES (?, ?)
+05-04 11:36| bind: 16:00 - 18:00
+05-04 11:36| bind: 2019-04-04
+05-04 11:39| 
+05-04 11:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+05-04 11:39| bind: CEML
+05-04 11:39| 
+05-04 11:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+05-04 11:39| bind: ABT1
+05-04 11:39| 
+05-04 11:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+05-04 11:39| bind: ABT2
+05-04 11:39| 
+05-04 11:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+05-04 11:39| bind: SMIN
+05-04 11:39| 
+05-04 11:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+05-04 11:39| bind: SMTW
+05-04 11:39| 
+05-04 11:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+05-04 11:39| bind: SMLI
+05-04 11:39| 
+05-04 11:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+05-04 11:39| bind: SMFB
+05-04 11:39| 
+05-04 11:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+05-04 11:39| bind: SMOT
+05-04 11:39| 
+05-04 11:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+05-04 11:39| bind: SMOI
+05-04 11:39| 
+05-04 11:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+05-04 11:39| bind: GAEM
+05-04 11:39| 
+05-04 11:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+05-04 11:39| bind: GAPA
+05-04 11:39| 
+05-04 11:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+05-04 11:39| bind: GAID
+05-04 11:39| 
+05-04 11:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+05-04 11:39| bind: OTHL
+05-04 11:39| 
+05-04 11:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+05-04 11:39| bind: OTHT
+05-04 11:39| 
+05-04 11:39| spGetAllPortfolioItems | SELECT id, title, date, name, thumbnail, mainImage, isDeleted
+                    FROM portfolio
+                    ORDER BY isDeleted ASC, date DESC
+05-04 20:54| 
+05-04 20:54| spGetAvailableShifts | SELECT id, shift
+                    FROM shifts
+                    WHERE isDeleted = 0
+                    ORDER BY shift ASC
+05-04 20:54| 
+05-04 20:54| spGetCalendarItems | SELECT id, title, start
+                    FROM availability
+                    WHERE isBooked = 0
+                    AND STR_TO_DATE(start,'%Y-%m-%d') >= timestamp(current_date)
+05-04 21:18| 
+05-04 21:18| spGetAvailableShifts | SELECT id, shift
+                    FROM shifts
+                    WHERE isDeleted = 0
+                    ORDER BY shift ASC
+05-04 21:18| 
+05-04 21:18| spGetCalendarItems | SELECT id, title, start
+                    FROM availability
+                    WHERE isBooked = 0
+                    AND STR_TO_DATE(start,'%Y-%m-%d') >= timestamp(current_date)
+05-04 21:40| 
+05-04 21:40| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+05-04 21:40| bind: CEML
+05-04 21:40| 
+05-04 21:40| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+05-04 21:40| bind: ABT1
+05-04 21:40| 
+05-04 21:40| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+05-04 21:40| bind: ABT2
+05-04 21:40| 
+05-04 21:40| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+05-04 21:40| bind: SMIN
+05-04 21:40| 
+05-04 21:40| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+05-04 21:40| bind: SMTW
+05-04 21:40| 
+05-04 21:40| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+05-04 21:40| bind: SMLI
+05-04 21:40| 
+05-04 21:40| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+05-04 21:40| bind: SMFB
+05-04 21:40| 
+05-04 21:40| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+05-04 21:40| bind: SMOT
+05-04 21:40| 
+05-04 21:40| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+05-04 21:40| bind: SMOI
+05-04 21:40| 
+05-04 21:40| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+05-04 21:40| bind: GAEM
+05-04 21:40| 
+05-04 21:40| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+05-04 21:40| bind: GAPA
+05-04 21:40| 
+05-04 21:40| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+05-04 21:40| bind: GAID
+05-04 21:40| 
+05-04 21:40| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+05-04 21:40| bind: OTHL
+05-04 21:40| 
+05-04 21:40| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+05-04 21:40| bind: OTHT
+05-04 21:40| 
+05-04 21:40| spGetAllBookings | SELECT b.name, b.number, b.email, b.date, b.isConfirmed, b.isSentSMSReminder
+                    FROM booking b
+                    ORDER BY date DESC
+06-04 13:04| 
+06-04 13:04| spGetAvailableShifts | SELECT id, shift
+                    FROM shifts
+                    WHERE isDeleted = 0
+                    ORDER BY shift ASC
+06-04 13:04| 
+06-04 13:04| spGetCalendarItems | SELECT id, title, start
+                    FROM availability
+                    WHERE isBooked = 0
+                    AND STR_TO_DATE(start,'%Y-%m-%d') >= timestamp(current_date)
+06-04 13:05| 
+06-04 13:05| spGetAllPortfolioItems | SELECT id, title, date, name, thumbnail, mainImage, isDeleted
+                    FROM portfolio
+                    ORDER BY isDeleted ASC, date DESC
+07-04 21:39| 
+07-04 21:39| spGetAvailableShifts | SELECT id, shift
+                    FROM shifts
+                    WHERE isDeleted = 0
+                    ORDER BY shift ASC
+07-04 21:39| 
+07-04 21:39| spGetCalendarItems | SELECT id, title, start
+                    FROM availability
+                    WHERE isBooked = 0
+                    AND STR_TO_DATE(start,'%Y-%m-%d') >= timestamp(current_date)
+07-04 21:39| 
+07-04 21:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+07-04 21:39| bind: CEML
+07-04 21:39| 
+07-04 21:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+07-04 21:39| bind: ABT1
+07-04 21:39| 
+07-04 21:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+07-04 21:39| bind: ABT2
+07-04 21:39| 
+07-04 21:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+07-04 21:39| bind: SMIN
+07-04 21:39| 
+07-04 21:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+07-04 21:39| bind: SMTW
+07-04 21:39| 
+07-04 21:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+07-04 21:39| bind: SMLI
+07-04 21:39| 
+07-04 21:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+07-04 21:39| bind: SMFB
+07-04 21:39| 
+07-04 21:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+07-04 21:39| bind: SMOT
+07-04 21:39| 
+07-04 21:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+07-04 21:39| bind: SMOI
+07-04 21:39| 
+07-04 21:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+07-04 21:39| bind: GAEM
+07-04 21:39| 
+07-04 21:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+07-04 21:39| bind: GAPA
+07-04 21:39| 
+07-04 21:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+07-04 21:39| bind: GAID
+07-04 21:39| 
+07-04 21:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+07-04 21:39| bind: OTHL
+07-04 21:39| 
+07-04 21:39| spGetSettingByCode | SELECT settingValue
+                    FROM settings
+                    WHERE settingCode = ?
+07-04 21:39| bind: OTHT
+07-04 21:40| 
+07-04 21:40| spGetAvailableShifts | SELECT id, shift
+                    FROM shifts
+                    WHERE isDeleted = 0
+                    ORDER BY shift ASC
+07-04 21:40| 
+07-04 21:40| spGetCalendarItems | SELECT id, title, start
+                    FROM availability
+                    WHERE isBooked = 0
+                    AND STR_TO_DATE(start,'%Y-%m-%d') >= timestamp(current_date)
+07-04 21:40| 
+07-04 21:40| spInsertNewCalendarItem | INSERT INTO availability (title, start) VALUES (?, ?)
+07-04 21:40| bind: 13:00 - 15:00
+07-04 21:40| bind: 2019-04-01
+07-04 21:40| 
+07-04 21:40| spInsertNewCalendarItem | INSERT INTO availability (title, start) VALUES (?, ?)
+07-04 21:40| bind: 12:00 - 17:00
+07-04 21:40| bind: 2019-04-02
+08-04 09:06| 
+08-04 09:06| spGetAllPortfolioItems | SELECT id, title, date, name, thumbnail, mainImage, isDeleted
+                    FROM portfolio
+                    ORDER BY isDeleted ASC, date DESC
+08-04 20:33| 
+08-04 20:33| spGetAvailableShifts | SELECT id, shift
+                    FROM shifts
+                    WHERE isDeleted = 0
+                    ORDER BY shift ASC
+08-04 20:33| 
+08-04 20:33| spGetCalendarItems | SELECT id, title, start
+                    FROM availability
+                    WHERE isBooked = 0
+                    AND STR_TO_DATE(start,'%Y-%m-%d') >= timestamp(current_date)
+08-04 20:33| 
+08-04 20:33| spGetAvailableShifts | SELECT id, shift
+                    FROM shifts
+                    WHERE isDeleted = 0
+                    ORDER BY shift ASC
+08-04 20:33| 
+08-04 20:33| spGetCalendarItems | SELECT id, title, start
+                    FROM availability
+                    WHERE isBooked = 0
+                    AND STR_TO_DATE(start,'%Y-%m-%d') >= timestamp(current_date)
+08-04 20:34| 
+08-04 20:34| spGetAvailableShifts | SELECT id, shift
+                    FROM shifts
+                    WHERE isDeleted = 0
+                    ORDER BY shift ASC
+08-04 20:34| 
+08-04 20:34| spGetCalendarItems | SELECT id, title, start
+                    FROM availability
+                    WHERE isBooked = 0
+                    AND STR_TO_DATE(start,'%Y-%m-%d') >= timestamp(current_date)
+08-04 20:38| 
+08-04 20:38| spInsertNewCalendarItem | INSERT INTO availability (title, start) VALUES (?, ?)
+08-04 20:38| bind: 13:00 - 15:00
+08-04 20:38| bind: 2019-04-03
+08-04 20:39| 
+08-04 20:39| spGetAvailableShifts | SELECT id, shift
+                    FROM shifts
+                    WHERE isDeleted = 0
+                    ORDER BY shift ASC
+08-04 20:39| 
+08-04 20:39| spGetCalendarItems | SELECT id, title, start
+                    FROM availability
+                    WHERE isBooked = 0
+                    AND STR_TO_DATE(start,'%Y-%m-%d') >= timestamp(current_date)
+08-04 21:12| 
+08-04 21:12| spGetAllBookings | SELECT b.name, b.number, b.email, b.date, b.isConfirmed, b.isSentSMSReminder
+                    FROM booking b
+                    ORDER BY date DESC
+08-04 21:14| 
+08-04 21:14| spGetAllBookings | SELECT b.name, b.number, b.email, b.date, b.isConfirmed, b.isSentSMSReminder
+                    FROM booking b
+                    ORDER BY date DESC
+08-04 21:38| 
+08-04 21:38| spGetAvailableShifts | SELECT id, shift
+                    FROM shifts
+                    WHERE isDeleted = 0
+                    ORDER BY shift ASC
+08-04 21:38| 
+08-04 21:38| spGetCalendarItems | SELECT id, title, start
+                    FROM availability
+                    WHERE isBooked = 0
+                    AND STR_TO_DATE(start,'%Y-%m-%d') >= timestamp(current_date)
+08-04 21:38| 
+08-04 21:38| spInsertNewCalendarItem | INSERT INTO availability (title, start) VALUES (?, ?)
+08-04 21:38| bind: 12:00 - 17:00
+08-04 21:38| bind: 2019-04-09
+08-04 21:42| 
+08-04 21:42| spGetAvailableShifts | SELECT id, shift
+                    FROM shifts
+                    WHERE isDeleted = 0
+                    ORDER BY shift ASC
+08-04 21:42| 
+08-04 21:42| spGetCalendarItems | SELECT id, title, start
+                    FROM availability
+                    WHERE isBooked = 0
+                    AND STR_TO_DATE(start,'%Y-%m-%d') >= timestamp(current_date)
+08-04 21:42| 
+08-04 21:42| spGetAllBookings | SELECT b.name, b.number, b.email, b.date, b.isConfirmed, b.isSentSMSReminder
+                    FROM booking b
+                    ORDER BY date DESC
+08-04 21:59| 
+08-04 21:59| spGetAllBookings | SELECT b.name, b.number, b.email, b.date, b.isConfirmed, b.isSentSMSReminder
+                    FROM booking b
+                    ORDER BY date DESC
+08-04 22:04| 
+08-04 22:04| spGetAllBookings | SELECT b.name, b.number, b.email, b.date, b.isConfirmed, b.isSentSMSReminder
+                    FROM booking b
+                    ORDER BY date DESC
+08-04 22:30| 
+08-04 22:30| spGetAllPortfolioItems | SELECT id, title, date, name, thumbnail, mainImage, isDeleted
+                    FROM portfolio
+                    ORDER BY isDeleted ASC, date DESC
+08-04 22:31| 
+08-04 22:31| spGetPortfolioItemById | SELECT id, title, body, name
+                    FROM portfolio
+                    WHERE id = ?
+                    LIMIT 0,1
+08-04 22:31| bind: 1
+08-04 22:32| 
+08-04 22:32| spUpdatePortfolioItemById | UPDATE portfolio
+                    SET name = ?, title = ?, body = ?
+                    WHERE id = ?
+08-04 22:32| bind: Abs
+08-04 22:32| bind: Audi A3 Sportback Full Interior & Exterior Valet
+08-04 22:32| bind: This is the now third time for this customer who has booked once a month for the next 12 months.
+08-04 22:32| bind: 1
+08-04 22:32| 
+08-04 22:32| spGetAllPortfolioItems | SELECT id, title, date, name, thumbnail, mainImage, isDeleted
+                    FROM portfolio
+                    ORDER BY isDeleted ASC, date DESC
+08-04 22:33| 
+08-04 22:33| spTogglePortfolioItem | UPDATE portfolio SET isDeleted = 1 - isDeleted
+                    WHERE id = ?
+08-04 22:33| bind: 7
+08-04 22:33| 
+08-04 22:33| spCheckPortfolioIsDeleted | SELECT isDeleted
+                    FROM portfolio
+                    WHERE id = ?
+08-04 22:33| bind: 7
+09-04 12:10| 
+09-04 12:10| spGetAllBookings | SELECT b.name, b.number, b.email, b.date, b.isConfirmed, b.isSentSMSReminder
+                    FROM booking b
+                    ORDER BY date DESC
+09-04 12:10| 
+09-04 12:10| spGetAvailableShifts | SELECT id, shift
+                    FROM shifts
+                    WHERE isDeleted = 0
+                    ORDER BY shift ASC
+09-04 12:10| 
+09-04 12:10| spGetCalendarItems | SELECT id, title, start
+                    FROM availability
+                    WHERE isBooked = 0
+                    AND STR_TO_DATE(start,'%Y-%m-%d') >= timestamp(current_date)
+09-04 12:10| 
+09-04 12:10| spGetAllBookings | SELECT b.name, b.number, b.email, b.date, b.isConfirmed, b.isSentSMSReminder
+                    FROM booking b
+                    ORDER BY date DESC
