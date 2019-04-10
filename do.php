@@ -9,7 +9,7 @@ if (isset($_SESSION['token'])) {
     $token->CheckReferer($_SERVER['HTTP_REFERER']);
 }
 
-//TODO: ALWAYS CHECK TOKEN??
+//TODO: ALWAYS CHECK TOKEN??//
 
 switch ($_GET['z']) {
 
