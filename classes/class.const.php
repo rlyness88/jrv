@@ -7,7 +7,7 @@ abstract class Constants {
     const ENV = 'DEV';
 
     //TOKENS
-    const SITETOKENURL = 'rlyness.co.uk';
+    const SITETOKENURL = 'xxx';
 
     // CONNECT STRING
     const CONSTRING = 'mysql:host=localhost;dbname=jrv';

@@ -22,44 +22,6 @@ switch ($_GET['z']) {
 
         break;
 
-    case 'SendTestSMS':
-
-        $to = '+447729209351';
-        $toname = 'Russ';
-        $message = 'Don\'t forget your appointment!!';
-
-        $sd = SendSMSMessage($to, $toname, $message);
-
-        if (!empty($sd)) {
-            $db->insert('spSaveSentSMS', array($to, $message, $sd));
-        }
-
-        echo "message sent: $sd";
-
-        break;
-
-    case 'SendTestWhatsapp':
-
-        // Update the path below to your autoload.php,
-        // see https://getcomposer.org/doc/01-basic-usage.md
-        require_once 'res/twilio/Twilio/autoload.php';
-
-        $sid    = "AC07773044320c1f0b2637961731e0ede1";
-        $token  = "e6b94f306010db130d5436191bdf8164";
-        $twilio = new Client($sid, $token);
-
-        $message = $twilio->messages
-            ->create("whatsapp:+447729209351",
-                array(
-                    "from" => "whatsapp:+14155238886",
-                    "body" => "[Message from: Jake Russell Valet] Hi Abi, don't forget your appointment is coming tomorrow [04 April 2019 @ 12:00].  If there are any problems please contact me ASAP.  http://home.rlyness.co.uk/dev/jrv/index.php"
-                )
-            );
-
-        print($message->sid);
-
-        break;
-
     case 'CheckBookingAvailability':
 
         $booking = $db->select('spGetAvailabilityById', array($_POST['id']));
